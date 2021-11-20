@@ -31,10 +31,10 @@ public class MoveLeft : MonoBehaviour
             
         if(gameObject.CompareTag("Ground"))
         {
-            if(transform.position.x <= -groundLength)
+            if(transform.position.x <= -groundLength*2)
             {
                 transform.position = new Vector2(
-                    transform.position.x + 2 * groundLength,
+                    transform.position.x + 6 * groundLength, // Scaled ground size by 3
                     transform.position.y);
             }
         }
